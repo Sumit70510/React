@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+/* Enable dark mode in Tailwind v4 */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Theme additions */
+@theme {
+  --color-primary: #6366f1;
+  --spacing-13: 3.25rem;
+}
+
+@layer utilities {
+  .bg-primary {
+    background-color: var(--color-primary);
+  }
+}
